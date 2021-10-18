@@ -1,0 +1,13 @@
+{
+  "name": "node-express-ts",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "Adonis",
+  "license": "MIT",
+  "scripts": {
+    "dev": ""
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
