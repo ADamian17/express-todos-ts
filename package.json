@@ -5,9 +5,18 @@
   "author": "Adonis",
   "license": "MIT",
   "scripts": {
-    "dev": ""
+    "watch-nodemon": "nodemon server/server.js",
+    "watch-ts": "tsc -w",
+    "dev": "concurrently --handle-input -n server,ts -c 'bgGreen.bold,bgBlue.bold' 'npm:watch-nodemon' 'npm:watch-ts' rs"
   },
   "dependencies": {
+    "@prisma/client": "^3.2.1",
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^16.11.1",
+    "concurrently": "^6.3.0",
+    "prisma": "3.2.1"
   }
 }
